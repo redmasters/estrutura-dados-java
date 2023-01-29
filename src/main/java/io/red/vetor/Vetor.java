@@ -19,6 +19,7 @@ public class Vetor {
 ////        }
 //    }
 
+    /*
         public void adiciona(String elemento) throws Exception {
 
         if (this.tamanho < this.elementos.length) {
@@ -29,6 +30,18 @@ public class Vetor {
 
     }
 
+     */
+
+    public boolean adiciona(String elemento) {
+
+        if (this.tamanho < this.elementos.length) {
+            this.elementos[this.tamanho] = elemento;
+            this.tamanho++;
+            return true;
+        }
+        return false;
+
+    }
 
 
 }
